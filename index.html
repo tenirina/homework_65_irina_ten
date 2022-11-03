@@ -19,8 +19,7 @@
     
     <p id="task_2_1"></p>
 
-    
-
+   
     <script>
         // task 1
         let text = "";
@@ -75,7 +74,24 @@
 
         document.getElementById("task_2_1").innerHTML = tot;
 
-        
+        // task 3
+
+        quest();
+
+        function quest() {
+            let num = prompt('У квадратного стола отпилили один угол. Сколько теперь углов у него стало?', 0)
+            if (num == '5') {
+                alert("Ответ верный")
+            }
+            else if (num == 'пять') {
+                alert("Ответ верный")
+            }
+            else {
+                alert("Ответ неверный")
+            }
+        }
+
+       
     </script>
 </body>
 </html>
