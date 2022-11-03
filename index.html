@@ -7,6 +7,31 @@
     <title>Homework</title>
 </head>
 <body>
+    <h2>Task 1:</h2>
+    
+    <p id="task_1"></p>
+
    
+
+    <script>
+        // task 1
+        let text = "";
+        const array = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
+        array.forEach(arrayFunc);
+
+        document.getElementById("task_1").innerHTML = text;
+                
+        function arrayFunc(item, index) {
+            switch (item) {
+                case 'молоко':
+                    text += index+1 + ". " + item + ' - это плохо, пиво - хорошо' + "<br>";  
+                    break;
+                case 'пиво':
+                    text += index+1 + ". " + item + ' - по-любому хорошо' + "<br>";
+                    break;
+            } 
+        }
+      
+    </script>
 </body>
 </html>
