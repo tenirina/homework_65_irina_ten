@@ -19,7 +19,11 @@
     
     <p id="task_2_1"></p>
 
-   
+    <h2>Task 4:</h2>
+    
+    <p id="task_4_1"></p>
+    <p id="task_4_2"></p>
+
     <script>
         // task 1
         let text = "";
@@ -91,7 +95,25 @@
             }
         }
 
-       
+        // task 4        
+            
+        let duck = {
+            name: "Дональд",
+            color: "белый",
+            age: 1,
+            toStr: function(){ 
+                let	str = "";
+                str += duck.name + ", " + duck.color + ", " + duck.age + " год" 
+                return str
+            },
+            say: function(){
+                let say = "кря кря";
+                return say
+            },           
+        }     
+
+        document.getElementById('task_4_1').innerHTML = duck.toStr();
+        document.getElementById('task_4_2').innerHTML = duck.say();
     </script>
 </body>
 </html>
