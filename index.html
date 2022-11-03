@@ -11,8 +11,11 @@
     
     <p id="task_1"></p>
 
-   
+    <h2>Task 2:</h2>
+    
+    <p id="task_2"></p>
 
+ 
     <script>
         // task 1
         let text = "";
@@ -31,7 +34,29 @@
                     break;
             } 
         }
-      
+        // task 2
+        const arrayFirst = [1, 5, 12, 4, 3];
+        const arraySecond = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const arrayThird  = [3, 10, 17];
+        let total = '';  
+        
+        average(arrayFirst);
+        average(arraySecond);
+        average(arrayThird);
+
+        document.getElementById('task_2').innerHTML = total;
+        
+        function average(array){ 
+            let avg = 0;                    
+            let sum = 0;
+            for(let i = 0; i < array.length; i++){
+                sum += array[i]
+            }            
+            avg += sum / array.length;            
+            total += avg + "<br>";
+        }
+
+       
     </script>
 </body>
 </html>
