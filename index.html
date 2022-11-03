@@ -15,7 +15,12 @@
     
     <p id="task_2"></p>
 
- 
+    <h2>Task 2_1:</h2>
+    
+    <p id="task_2_1"></p>
+
+    
+
     <script>
         // task 1
         let text = "";
@@ -56,7 +61,21 @@
             total += avg + "<br>";
         }
 
-       
+        // task 2_1
+
+        const arrFirst = [1, 5, 12, 4, 3];
+        const arrSecond = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const arrThird  = [3, 10, 17];
+        let tot = '';  
+
+        let average_1 = arrayFirst.reduce((a, b) => a + b, 0) / arrayFirst.length;
+        let average_2 = arraySecond.reduce((a, b) => a + b, 0) / arraySecond.length;
+        let average_3 = arrayThird.reduce((a, b) => a + b, 0) / arrayThird.length;
+        tot = String(average_1) + "<br>" + String(average_2) + "<br>" + String(average_3)
+
+        document.getElementById("task_2_1").innerHTML = tot;
+
+        
     </script>
 </body>
 </html>
